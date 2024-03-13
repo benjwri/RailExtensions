@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+ 
+  "name": "Rail Website Integration",
+  "version": "0.1.0",
+  "description": "Links RealTimeTrains, RailChecker and Timetable History",
+ 
+ 
+  "content_scripts": [{
+    "js": ["RCcontent.js"],
+    "matches": ["https://railchecker.app/service/*/detailed/"]
+  },
+  {
+    "js": ["RTTcontent.js"],
+    "matches": ["https://www.realtimetrains.co.uk/service/*/detailed"]
+  },
+  {
+    "js": ["TIcontent.js"],
+    "matches": ["https://trackit.uppyjc.co.uk/TrackIT/Forms/Train.aspx*"]
+  }]
+}
