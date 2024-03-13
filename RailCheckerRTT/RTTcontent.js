@@ -3,10 +3,10 @@ var url = window.location.toString();
 
 var splitUrl = url.split("/")
 
-var serviceId = splitUrl[4].substr(6,6)
-var year = splitUrl[5].substr(0,4)
-var month = splitUrl[5].substr(5,2)
-var day = splitUrl[5].substr(8,4)
+var serviceId = splitUrl[4].substring(6,6)
+var year = splitUrl[5].substring(0,4)
+var month = splitUrl[5].substring(5,2)
+var day = splitUrl[5].substring(8,4)
 
 var buttonDiv = document.getElementsByClassName("alter-type")[0]
 
@@ -21,7 +21,6 @@ let button2 = document.createElement("a")
 button2.setAttribute("class","button secondary hollow")
 button2.setAttribute("href","https://railchecker.app/service/" + year + "-" + month + "-" + day + "/" + serviceId + "/detailed/")
 button2.setAttribute("target","_blank")
-//button2.setAttribute("style","margin:5px;")
 let text2  = document.createTextNode("Open RailChecker")
 
 let button3 = document.createElement("a")

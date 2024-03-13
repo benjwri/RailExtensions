@@ -19,13 +19,12 @@ button.appendChild(text)
 let button2 = document.createElement("a")
 button2.setAttribute("href","https://www.realtimetrains.co.uk/service/gb-nr:" + serviceId + "/" + year + "-" + month + "-" + day + "/detailed")
 button2.setAttribute("target","_blank")
-let text2  = document.createTextNode("Open RTT")
+let text2  = document.createTextNode("Open RealTimeTrains")
 button2.appendChild(text2)
 
 let button3 = document.createElement("a")
 button3.setAttribute("href","https://railchecker.app/service/" + year + "-" + month + "-" + day + "/" + serviceId + "/detailed/")
 button3.setAttribute("target","_blank")
-//button2.setAttribute("style","margin:5px;")
 let text3  = document.createTextNode("Open RailChecker")
 button3.appendChild(text3)
 
@@ -36,25 +35,3 @@ button.after(button3)
 origbutton.insertAdjacentText("afterend", " - ")
 button2.insertAdjacentText("afterend", " - ")
 button.insertAdjacentText("afterend", " - ")
-
-/*var buttonDiv = document.getElementsByClassName("alter-type")[0]
-
-let button = document.createElement("a")
-button.setAttribute("class","button secondary hollow")
-button.setAttribute("href","http://timetablehistory.com/times.aspx?uid=" + serviceId + "&date=" + year + month + day)
-button.setAttribute("target","_blank")
-button.setAttribute("style","margin:5px;")
-let text  = document.createTextNode("Open Timetable History")
-
-let button2 = document.createElement("a")
-button2.setAttribute("class","button secondary hollow")
-button2.setAttribute("href","https://railchecker.app/service/" + year + "-" + month + "-" + day + "/" + serviceId + "/detailed/")
-button2.setAttribute("target","_blank")
-//button2.setAttribute("style","margin:5px;")
-let text2  = document.createTextNode("Open RailChecker")
-
-button.appendChild(text)
-buttonDiv.appendChild(button)
-
-button2.appendChild(text2)
-buttonDiv.appendChild(button2)*/

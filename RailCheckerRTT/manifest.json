@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
  
-  "name": "Rail Website Integration",
-  "version": "0.1.0",
-  "description": "Links RealTimeTrains, RailChecker and Timetable History",
+  "name": "Rail Enthusiast Website Integrations",
+  "version": "1.0.0",
+  "description": "Provides links between RealTimeTrains, Timetable History, RailChecker and TrackIT!",
  
  
   "content_scripts": [{

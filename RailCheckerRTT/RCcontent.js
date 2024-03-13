@@ -4,9 +4,9 @@ var url = window.location.toString();
 var splitUrl = url.split("/")
 
 var serviceId = splitUrl[5]
-var year = splitUrl[4].substr(0,4)
-var month = splitUrl[4].substr(5,2)
-var day = splitUrl[4].substr(8,4)
+var year = splitUrl[4].substring(0,4)
+var month = splitUrl[4].substring(5,2)
+var day = splitUrl[4].substring(8,4)
 
 var origbutton = document.getElementsByClassName("d-block")[0]
 
@@ -21,7 +21,7 @@ let button2 = document.createElement("a")
 button2.setAttribute("class","btn btn-primary d-block")
 button2.setAttribute("href","https://www.realtimetrains.co.uk/service/gb-nr:" + serviceId + "/" + year + "-" + month + "-" + day + "/detailed")
 button2.setAttribute("target","_blank")
-let text2  = document.createTextNode("Open RTT")
+let text2  = document.createTextNode("Open RealTimeTrains")
 button2.appendChild(text2)
 
 let button3 = document.createElement("a")
