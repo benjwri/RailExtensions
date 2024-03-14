@@ -1,5 +1,19 @@
+var children =document.getElementById("lblTrainDetails").children
+var length = children.length
+let i = 0
+serviceId = ""
+RegEx = /Today's  ?([A-Z0-9]{1,6})/
 
-var serviceId = document.getElementById("lblTrainDetails").children[5].textContent
+while (i < length) {
+    var matchtext = children[i].textContent
+    if (matchtext) {
+        var match = matchtext.match(RegEx)
+        if (match) {
+            serviceId = match[1]
+        }
+    }
+    i = i + 1
+}
 
 var year = new Date().getFullYear()
 var month = new Date().getMonth()+1
