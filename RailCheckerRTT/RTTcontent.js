@@ -19,7 +19,7 @@ let text  = document.createTextNode("Open Timetable History")
 
 let button2 = document.createElement("a")
 button2.setAttribute("class","button secondary hollow")
-button2.setAttribute("href","https://railchecker.app/service/" + year + "-" + month + "-" + day + "/" + serviceId + "/detailed/")
+button2.setAttribute("href","https://railchecker.app/service/" + year + "-" + month + "-" + day + "/" + serviceId + "/")
 button2.setAttribute("target","_blank")
 let text2  = document.createTextNode("Open RailChecker")
 

@@ -37,7 +37,7 @@ let text2  = document.createTextNode("Open RealTimeTrains")
 button2.appendChild(text2)
 
 let button3 = document.createElement("a")
-button3.setAttribute("href","https://railchecker.app/service/" + year + "-" + month + "-" + day + "/" + serviceId + "/detailed/")
+button3.setAttribute("href","https://railchecker.app/service/" + year + "-" + month + "-" + day + "/" + serviceId + "/")
 button3.setAttribute("target","_blank")
 let text3  = document.createTextNode("Open RailChecker")
 button3.appendChild(text3)

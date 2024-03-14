@@ -8,7 +8,7 @@
  
   "content_scripts": [{
     "js": ["RCcontent.js"],
-    "matches": ["https://railchecker.app/service/*/detailed/"]
+    "matches": ["https://railchecker.app/service/*"]
   },
   {
     "js": ["RTTcontent.js"],
