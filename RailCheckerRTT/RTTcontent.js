@@ -2,7 +2,7 @@
 var url = window.location.toString();
 
 var splitUrl = url.split("/")
-console.log(splitUrl);
+
 var serviceId = splitUrl[4].substring(6)
 var year = splitUrl[5].substring(0,4)
 var month = splitUrl[5].substring(5,7)
