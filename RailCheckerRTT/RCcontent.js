@@ -5,8 +5,8 @@ var splitUrl = url.split("/")
 
 var serviceId = splitUrl[5]
 var year = splitUrl[4].substring(0,4)
-var month = splitUrl[4].substring(5,2)
-var day = splitUrl[4].substring(8,4)
+var month = splitUrl[4].substring(5,7)
+var day = splitUrl[4].substring(8,10)
 
 var origbutton = document.getElementsByClassName("d-block")[0]
 

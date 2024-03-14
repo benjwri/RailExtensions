@@ -2,11 +2,11 @@
 var url = window.location.toString();
 
 var splitUrl = url.split("/")
-
-var serviceId = splitUrl[4].substring(6,6)
+console.log(splitUrl);
+var serviceId = splitUrl[4].substring(6)
 var year = splitUrl[5].substring(0,4)
-var month = splitUrl[5].substring(5,2)
-var day = splitUrl[5].substring(8,4)
+var month = splitUrl[5].substring(5,7)
+var day = splitUrl[5].substring(8,10)
 
 var buttonDiv = document.getElementsByClassName("alter-type")[0]
 
